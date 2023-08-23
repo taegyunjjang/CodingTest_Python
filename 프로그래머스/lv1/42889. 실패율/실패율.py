@@ -11,6 +11,7 @@ def solution(N, stages):
                 failureRate[j] = (0, j + 1)
             break
     failureRate.sort(reverse=True, key=lambda x: x[0])
+    
     for j in range(N):
         answer.append(failureRate[j][1])
     return answer
