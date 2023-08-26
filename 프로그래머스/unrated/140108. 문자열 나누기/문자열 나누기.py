@@ -5,7 +5,7 @@ def solution(s):
     flag = s[0]
     isSame = False
     
-    for i, ch in enumerate(s):
+    for ch in s:
         if isSame:
             flag = ch
             isSame = False
