@@ -1,5 +1,4 @@
 def isParenthesis(strList):
-    l = len(strList)
     dic = {']': '[', '}': '{', ')': '('}
     stack = []
     for ch in strList:
