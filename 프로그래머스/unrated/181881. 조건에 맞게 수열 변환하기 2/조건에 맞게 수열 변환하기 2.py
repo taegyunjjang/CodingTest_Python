@@ -1,19 +1,18 @@
 def solution(arr):
     cnt = 0
-    tmp = [0] * len(arr)
-    while(True):
+    
+    while True:
+        isChange = False
         for i, num in enumerate(arr):
             if num >= 50 and num % 2 == 0:
-                tmp[i] = arr[i] / 2
+                arr[i] = num // 2
+                isChange = True
             elif num < 50 and num % 2 != 0:
-                tmp[i] = arr[i] * 2 + 1
-            else:
-                tmp[i] = arr[i]
+                arr[i] = num * 2 + 1
+                isChange = True
+        if isChange:
+            cnt += 1
+        else:
+            return cnt
         
-        if tmp == arr:
-            break
-        cnt += 1
-        for i in range(len(arr)):
-            arr[i] = tmp[i]
-    return cnt
         
