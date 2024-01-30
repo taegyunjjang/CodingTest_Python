@@ -1,7 +1,7 @@
 from collections import deque
 
 def solution(numbers):
-    num_len = len(numbers)
+    num_len = len(numbers)  
     answer = [-1] * num_len
     
     stack = deque()
