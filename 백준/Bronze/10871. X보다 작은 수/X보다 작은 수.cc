@@ -1,18 +1,21 @@
+#include <bits/stdc++.h>
 #include <iostream>
+
+#define endl '\n'
 using namespace std;
 
-int main() {
-    int N, X, num;
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int N, X;
     cin >> N >> X;
-
+    int arr[N];
+    for (int i = 0; i < N; i++) 
+        cin >> arr[i];
     for (int i = 0; i < N; i++) {
-        cin >> num;
-        
-        if (num < X) {
-            cout << num << " ";
-        }
-    }
-
-    cout << endl;
-    return 0;
+        if (arr[i] < X)
+            cout << arr[i] << ' ';
+    }    
 }
