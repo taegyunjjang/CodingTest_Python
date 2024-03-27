@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+#include <iostream>
+
+#define endl '\n'
+using namespace std;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int T;
+    int A, B;
+    cin >> T;
+    for (int i = 0; i < T; i++) {
+        cin >> A >> B;
+        cout << A + B << endl;
+    }
+}
