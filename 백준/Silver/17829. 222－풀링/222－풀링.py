@@ -1,6 +1,7 @@
 import sys
 
 def pooling(ary, tmp, n):
+    tmp = []
     if n == 2:
         ary = ary[0] + ary[1]
         return sorted(ary)[2]
